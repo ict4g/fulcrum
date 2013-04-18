@@ -59,7 +59,7 @@ a img {
 
 ul#primary-nav {
   text-align: right;
-  background-image: image-url('logo.png');
+  background-image: image-url("<%= asset_path 'logo.png' %>");
   background-repeat: no-repeat;
   background-position: 13px 6px;
   margin: 0;
@@ -556,7 +556,7 @@ div.note {
   // The submit button while the server is saving the note.
   input.saving {
     padding-left: 16px;
-    background-image: url('throbber.gif');
+    background-image: url("<%= asset_path 'throbber.gif' %>");
     background-repeat: no-repeat;
     background-position: left center;
   }
